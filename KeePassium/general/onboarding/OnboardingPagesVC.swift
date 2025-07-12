@@ -11,6 +11,11 @@ import UIKit
 
 final class OnboardingPagesVC: UIPageViewController {
 
+    private var previousStandardAppearance: UINavigationBarAppearance?
+    private var previousScrollEdgeAppearance: UINavigationBarAppearance?
+    private var previousCompactAppearance: UINavigationBarAppearance?
+    private var previousIsTranslucent: Bool?
+
     private lazy var pages: [UIViewController] = steps.map {
         let vc = OnboardingStepVC.instantiateFromStoryboard()
         vc.step = $0
@@ -49,11 +54,10 @@ final class OnboardingPagesVC: UIPageViewController {
         return pageControl
     }()
 
-    private lazy var closeButton: UIButton = {
-        let button = UIButton(type: .close, primaryAction: UIAction {
+    private lazy var closeButton: UIBarButtonItem = {
+        let button = UIBarButtonItem(systemItem: .close, primaryAction: UIAction {
             [weak self] _ in self?.dismiss(animated: true)
         })
-        button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
 
@@ -68,20 +72,18 @@ final class OnboardingPagesVC: UIPageViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        edgesForExtendedLayout = .top
+        extendedLayoutIncludesOpaqueBars = true
+        
         view.backgroundColor = ImageAsset.backgroundPattern.asColor()
-        navigationController?.navigationBar.isHidden = true
 
         dataSource = self
         delegate = self
 
         view.addSubview(pageControl)
-        view.addSubview(closeButton)
         NSLayoutConstraint.activate([
             pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            pageControl.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
-            closeButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 8),
-            closeButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 8),
+            pageControl.centerYAnchor.constraint(equalTo: view.topAnchor, constant: 20),
         ])
 
         if let firstVC = pages.first {
@@ -91,13 +93,48 @@ final class OnboardingPagesVC: UIPageViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+
+        if let navBar = navigationController?.navigationBar {
+            previousStandardAppearance = navBar.standardAppearance.copy()
+            previousScrollEdgeAppearance = navBar.scrollEdgeAppearance?.copy()
+            previousCompactAppearance = navBar.compactAppearance?.copy()
+            previousIsTranslucent = navBar.isTranslucent
+
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithTransparentBackground()
+            appearance.backgroundColor = .clear
+            appearance.shadowColor = .clear
+            navBar.standardAppearance = appearance
+            navBar.scrollEdgeAppearance = appearance
+            navBar.compactAppearance = appearance
+            navBar.isTranslucent = true
+        }
+
         updateControls()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if let navBar = navigationController?.navigationBar {
+            if let previousStandardAppearance {
+                navBar.standardAppearance = previousStandardAppearance
+            }
+            if let previousScrollEdgeAppearance {
+                navBar.scrollEdgeAppearance = previousScrollEdgeAppearance
+            }
+            if let previousCompactAppearance {
+                navBar.compactAppearance = previousCompactAppearance
+            }
+            if let previousIsTranslucent {
+                navBar.isTranslucent = previousIsTranslucent
+            }
+        }
     }
 
     private func updateControls() {
         let index = currentIndex ?? 0
         pageControl.currentPage = index
-        closeButton.isHidden = !canSkipRemainingSteps
+        navigationItem.setLeftBarButton(canSkipRemainingSteps ? closeButton : nil, animated: true)
         onStateUpdate?(self)
     }
 }
