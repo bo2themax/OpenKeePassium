@@ -1,0 +1,32 @@
+// Base.xcconfig – shared defaults
+
+// Team & IDs
+DEVELOPMENT_TEAM                    = ABCDE12345
+PRODUCT_BUNDLE_IDENTIFIER_BASE      = com.example
+
+// Name & Bundle
+BRAND_NAME                          = OpenKeePassium
+PRODUCT_NAME                        = $(TARGET_NAME)
+PRODUCT_BUNDLE_IDENTIFIER           = $(PRODUCT_BUNDLE_IDENTIFIER_BASE).$(PRODUCT_NAME)
+
+// Signing
+CODE_SIGN_STYLE                     = Automatic
+CODE_SIGN_IDENTITY                  = Apple Development
+
+// Deployment targets
+IPHONEOS_DEPLOYMENT_TARGET          = 17.0
+MACOSX_DEPLOYMENT_TARGET            = 14.0
+
+// Swift
+SWIFT_VERSION                       = 5.0
+
+// App Groups & Keychain
+APP_GROUP_IDENTIFIER                = group.$(PRODUCT_BUNDLE_IDENTIFIER_BASE).$(BRAND_NAME)
+KEYCHAIN_ACCESS_GROUP               = $$(AppIdentifierPrefix).$(PRODUCT_BUNDLE_IDENTIFIER_BASE).$(BRAND_NAME).sharedItems
+ICLOUD_CONTAINER_IDENTIFIER         = iCloud.$(PRODUCT_BUNDLE_IDENTIFIER_BASE).$(BRAND_NAME).passwords
+
+// Associated Domain
+ASSOCIATED_DOMAIN                   = example.com
+
+// Others
+APP_URL_SCHEME                      = openkeepassium

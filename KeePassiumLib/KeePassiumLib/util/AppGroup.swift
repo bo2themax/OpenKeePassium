@@ -10,23 +10,11 @@ import Foundation
 
 public class AppGroup {
     public static var id: String = {
-        if BusinessModel.isIntuneEdition {
-            return "group.com.keepassium.intune"
-        } else {
-            return "group.com.keepassium"
-        }
+        (Bundle.main.infoDictionary?["App Group Identifier"] as? String)!
     }()
 
     public static let appURLScheme: String = {
-        if BusinessModel.isIntuneEdition {
-            return "keepassium.org"
-        }
-        switch BusinessModel.type {
-        case .freemium:
-            return "keepassium"
-        case .prepaid:
-            return "keepassium.pro"
-        }
+        (Bundle.main.infoDictionary?["App URL Scheme"] as? String)!
     }()
 
     public static let upgradeToPremiumURL = URL(string: appURLScheme + "://upgradeToPremium")! 

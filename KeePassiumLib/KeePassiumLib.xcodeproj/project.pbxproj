@@ -569,6 +569,7 @@
 		75FDEF1D233ABE7800F17C26 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
 		75FDEF49233ABED700F17C26 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7CF058B3429FDF4BE926A41F /* GoogleDriveItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDriveItem.swift; sourceTree = "<group>"; };
+		817632902E22B3AF00C4C001 /* KeePassiumLib.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = KeePassiumLib.xcconfig; path = ../Configs/KeePassiumLib.xcconfig; sourceTree = "<group>"; };
 		B6F9418A30C1BE73FE3B3BE8 /* GoogleDriveDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDriveDataSource.swift; sourceTree = "<group>"; };
 		F31114A42B9B807500236632 /* DropboxDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxDataSource.swift; sourceTree = "<group>"; };
 		F31115842B9C861800236632 /* DropboxManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxManager.swift; sourceTree = "<group>"; };
@@ -1121,6 +1122,7 @@
 				75D0C76C2174AF1F00C64C93 /* KeePassiumLib */,
 				75D0C76B2174AF1F00C64C93 /* Products */,
 				75F4ACA22175F4A400B22D8B /* Frameworks */,
+				817632902E22B3AF00C4C001 /* KeePassiumLib.xcconfig */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -1843,12 +1845,10 @@
 		};
 		75D0C77F2174AF2000C64C93 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 817632902E22B3AF00C4C001 /* KeePassiumLib.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 84W4PHXS24;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1859,7 +1859,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.keepassium.ios.KeePassiumLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1869,12 +1868,10 @@
 		};
 		75D0C7802174AF2000C64C93 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 817632902E22B3AF00C4C001 /* KeePassiumLib.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 84W4PHXS24;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1885,7 +1882,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.keepassium.ios.KeePassiumLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

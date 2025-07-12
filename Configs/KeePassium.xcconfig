@@ -1,0 +1,8 @@
+#include "Base.xcconfig"
+
+INFOPLIST_FILE                      = $(SRCROOT)/KeePassium/Info.plist
+CODE_SIGN_ENTITLEMENTS              = $(SRCROOT)/KeePassium/KeePassium.entitlements
+CODE_SIGN_ENTITLEMENTS[sdk=macosx*] = $(SRCROOT)/KeePassium/KeePassium-macOS.entitlements
+INFOPLIST_KEY_CFBundleDisplayName   = $(BRAND_NAME)
+
+#include "Developer.xcconfig"

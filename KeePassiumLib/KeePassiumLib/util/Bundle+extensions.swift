@@ -9,7 +9,7 @@
 import Foundation
 
 extension Bundle {
-    internal static let framework = Bundle(identifier: "com.keepassium.ios.KeePassiumLib")!
+    internal static let framework = Bundle(for: BundleFinder.self)
 
     static var mainAppURL: URL {
         let pathComponents = main.bundleURL.pathComponents
@@ -23,3 +23,5 @@ extension Bundle {
         return result
     }
 }
+
+private class BundleFinder {}
