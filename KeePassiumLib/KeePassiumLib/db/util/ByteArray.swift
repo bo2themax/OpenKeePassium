@@ -630,7 +630,7 @@ public final class SecureBytes: Eraseable, Cloneable, Codable {
             key = nil
             return Array(plainText)
         }
-        return outData.bytes
+        return .init(outData)
     }
 
     private static func decrypt(_ encrypted: [UInt8], with key: SecKey?) -> [UInt8] {
@@ -664,7 +664,7 @@ public final class SecureBytes: Eraseable, Cloneable, Codable {
             }
             fatalError() 
         }
-        return plainTextData.bytes
+        return .init(plainTextData)
     }
 }
 

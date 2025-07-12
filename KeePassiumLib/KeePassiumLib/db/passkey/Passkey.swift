@@ -294,7 +294,7 @@ public class NewPasskey: Passkey {
 
         authData.append(contentsOf: aaguid.data.asData)
         authData.append(contentsOf: UInt16(credentialID.count).bigEndian.bytes)
-        authData.append(contentsOf: credentialID.bytes)
+        authData.append(contentsOf: credentialID)
         let encodedPublicKey = cborEncodePublicKey(privateKey.publicKey)
         authData.append(contentsOf: encodedPublicKey)
         let attestationObject = cborEncodeAttestation(authData)
@@ -327,7 +327,7 @@ public class NewPasskey: Passkey {
         let dict: CBOR = [
             "fmt": "none",
             "attStmt": CBOR.map([:]),
-            "authData": CBOR.byteString(authData.bytes)
+            "authData": CBOR.byteString([UInt8](authData))
         ]
         let encoded = dict.encode()
         return Data(encoded)
