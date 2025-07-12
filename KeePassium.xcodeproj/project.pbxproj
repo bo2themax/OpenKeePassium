@@ -87,8 +87,6 @@
 		751ABAD32915B73D008C18DE /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758FF6BE28FAE32F007DE8EB /* ButtonCell.swift */; };
 		751ABAD52915B745008C18DE /* SubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758FF6CE28FC2C9C007DE8EB /* SubtitleCell.swift */; };
 		751ABAD92915B7ED008C18DE /* GroupViewerCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E9E2B3290C19FA00B79BE8 /* GroupViewerCells.swift */; };
-		751C7D502BDFE3A0006A58F4 /* XMLParsingSanityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751C7D4F2BDFE3A0006A58F4 /* XMLParsingSanityTests.swift */; };
-		751C7D542BE03582006A58F4 /* XMLParsingCompletenessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751C7D532BE03582006A58F4 /* XMLParsingCompletenessTests.swift */; };
 		751DED732847B44B00B6D02E /* UITextInput+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751DED722847B44B00B6D02E /* UITextInput+extensions.swift */; };
 		751DED742847B44B00B6D02E /* UITextInput+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751DED722847B44B00B6D02E /* UITextInput+extensions.swift */; };
 		751DED752847B44B00B6D02E /* UITextInput+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751DED722847B44B00B6D02E /* UITextInput+extensions.swift */; };
@@ -1211,7 +1209,6 @@
 		F31114AB2B9B84E100236632 /* DropboxConnectionSetupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31114A72B9B83B300236632 /* DropboxConnectionSetupCoordinator.swift */; };
 		F31114B02B9B894C00236632 /* DropboxConnectionSetupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31114A72B9B83B300236632 /* DropboxConnectionSetupCoordinator.swift */; };
 		F31114B12B9B894D00236632 /* DropboxConnectionSetupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31114A72B9B83B300236632 /* DropboxConnectionSetupCoordinator.swift */; };
-		F321414C2A90D2CD007A8D4E /* PasswordAuditServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F321414B2A90D2CD007A8D4E /* PasswordAuditServiceTests.swift */; };
 		F321414D2A934AAE007A8D4E /* HIBPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37CAA2C2A87EB110000EF64 /* HIBPService.swift */; };
 		F321414E2A934AAF007A8D4E /* HIBPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37CAA2C2A87EB110000EF64 /* HIBPService.swift */; };
 		F321414F2A934AB5007A8D4E /* PasswordAuditCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37CAA262A87D4F20000EF64 /* PasswordAuditCoordinator.swift */; };
@@ -1259,7 +1256,6 @@
 		F34B0DCA2B21D10C001F7500 /* FreeBadgeAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34B0DC92B21D10C001F7500 /* FreeBadgeAccessory.swift */; };
 		F34B0DCB2B2212A0001F7500 /* FreeBadgeAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34B0DC92B21D10C001F7500 /* FreeBadgeAccessory.swift */; };
 		F34B0DCC2B2212A2001F7500 /* FreeBadgeAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34B0DC92B21D10C001F7500 /* FreeBadgeAccessory.swift */; };
-		F34B0DCE2B22673F001F7500 /* AppHistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34B0DCD2B22673F001F7500 /* AppHistoryTests.swift */; };
 		F35232AA2B36FE6200F17F13 /* LString+tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35232A92B36FE6200F17F13 /* LString+tags.swift */; };
 		F35232AC2B36FE8600F17F13 /* LString+tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35232A92B36FE6200F17F13 /* LString+tags.swift */; };
 		F35232AE2B36FE8700F17F13 /* LString+tags.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35232A92B36FE6200F17F13 /* LString+tags.swift */; };
@@ -1275,7 +1271,6 @@
 		F37339002AACCAFD007188D2 /* FaviconDownloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810530B59228DDD3CEA55C42 /* FaviconDownloading.swift */; };
 		F3741DE82B5966780089F666 /* LargeTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3741DE72B5966780089F666 /* LargeTypeVC.swift */; };
 		F377C9AB2AA74A1A00266397 /* FaviconDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377C9AA2AA74A1A00266397 /* FaviconDownloader.swift */; };
-		F377C9AD2AA74F9000266397 /* FaviconDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377C9AC2AA74F9000266397 /* FaviconDownloaderTests.swift */; };
 		F37CAA272A87D4F20000EF64 /* PasswordAuditCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37CAA262A87D4F20000EF64 /* PasswordAuditCoordinator.swift */; };
 		F37CAA292A87D55B0000EF64 /* PasswordAuditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37CAA282A87D55B0000EF64 /* PasswordAuditVC.swift */; };
 		F37CAA2B2A87DDF60000EF64 /* PasswordAuditVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37CAA2A2A87DDF60000EF64 /* PasswordAuditVC.storyboard */; };
@@ -1283,10 +1278,8 @@
 		F37CAA302A87F0E50000EF64 /* PasswordAuditService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37CAA2F2A87F0E50000EF64 /* PasswordAuditService.swift */; };
 		F37CAA322A88DDD00000EF64 /* PasswordAuditResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37CAA312A88DDD00000EF64 /* PasswordAuditResultsVC.swift */; };
 		F37CAA342A88DDE30000EF64 /* PasswordAuditResultsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37CAA332A88DDE30000EF64 /* PasswordAuditResultsVC.storyboard */; };
-		F37CAA432A88F74E0000EF64 /* HIBPServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37CAA422A88F74E0000EF64 /* HIBPServiceTests.swift */; };
 		F37CAA492A88F7E30000EF64 /* YubiKit in Frameworks */ = {isa = PBXBuildFile; productRef = F37CAA482A88F7E30000EF64 /* YubiKit */; };
 		F37CAA4B2A88F7E30000EF64 /* Zxcvbn in Frameworks */ = {isa = PBXBuildFile; productRef = F37CAA4A2A88F7E30000EF64 /* Zxcvbn */; };
-		F37CAA4E2A88F8D10000EF64 /* DumpEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37CAA4D2A88F8D10000EF64 /* DumpEquatable.swift */; };
 		F38A48C42A80E987006B3B21 /* PasswordQualityIndicatorIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38A48C32A80E987006B3B21 /* PasswordQualityIndicatorIconView.swift */; };
 		F38A48C52A80E987006B3B21 /* PasswordQualityIndicatorIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38A48C32A80E987006B3B21 /* PasswordQualityIndicatorIconView.swift */; };
 		F38A48C62A80E987006B3B21 /* PasswordQualityIndicatorIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38A48C32A80E987006B3B21 /* PasswordQualityIndicatorIconView.swift */; };
@@ -1304,7 +1297,6 @@
 		F3B157D52B29B37F003F5075 /* OnboardingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B157D42B29B37F003F5075 /* OnboardingStep.swift */; };
 		F3B157D72B29B4A6003F5075 /* OnboardingStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B157D62B29B4A6003F5075 /* OnboardingStepVC.swift */; };
 		F3B157D92B29BB4F003F5075 /* OnboardingStepVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B157D82B29BB4F003F5075 /* OnboardingStepVC.storyboard */; };
-		F3B5B2DD2A88FC2A0059F2D1 /* PasswordQualityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B5B2DC2A88FC2A0059F2D1 /* PasswordQualityTests.swift */; };
 		F3B69FCC2B078917006FC966 /* EntryExtraViewerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B69FCB2B078917006FC966 /* EntryExtraViewerVC.swift */; };
 		F3B69FCD2B078917006FC966 /* EntryExtraViewerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B69FCB2B078917006FC966 /* EntryExtraViewerVC.swift */; };
 		F3B69FCE2B078917006FC966 /* EntryExtraViewerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B69FCB2B078917006FC966 /* EntryExtraViewerVC.swift */; };
@@ -1315,8 +1307,6 @@
 		F3C71AB12AFFAD7A00EEAC8E /* GroupEditorTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C71AAD2AFFAD7A00EEAC8E /* GroupEditorTitleCell.swift */; };
 		F3C744462CA5A820005D5429 /* AutoFillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C744452CA5A820005D5429 /* AutoFillMode.swift */; };
 		F3C744472CA5A820005D5429 /* AutoFillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C744452CA5A820005D5429 /* AutoFillMode.swift */; };
-		F3D011482B77B96800A9AF96 /* SearchQueryParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D011472B77B96800A9AF96 /* SearchQueryParsingTests.swift */; };
-		F3D0114A2B77CEFB00A9AF96 /* SearchHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D011492B77CEFB00A9AF96 /* SearchHelperTests.swift */; };
 		F3D9DE452AA79CAA00FEAF50 /* FaviconDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377C9AA2AA74A1A00266397 /* FaviconDownloader.swift */; };
 		F3D9DE462AA79CAB00FEAF50 /* FaviconDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F377C9AA2AA74A1A00266397 /* FaviconDownloader.swift */; };
 		F3E194682BCF23DB00FD03EE /* DeleteWordlistAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E194672BCF23DB00FD03EE /* DeleteWordlistAccessory.swift */; };
@@ -1530,8 +1520,6 @@
 		751C41E22700E4260002FB8F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/SettingsVC.strings; sourceTree = "<group>"; };
 		751C41E32700E4260002FB8F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/SettingsClipboardTimeoutVC.strings; sourceTree = "<group>"; };
 		751C41E52700E4260002FB8F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/SettingsDataProtectionVC.strings; sourceTree = "<group>"; };
-		751C7D4F2BDFE3A0006A58F4 /* XMLParsingSanityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParsingSanityTests.swift; sourceTree = "<group>"; };
-		751C7D532BE03582006A58F4 /* XMLParsingCompletenessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParsingCompletenessTests.swift; sourceTree = "<group>"; };
 		751DED722847B44B00B6D02E /* UITextInput+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextInput+extensions.swift"; sourceTree = "<group>"; };
 		751E0CE72309AE5D0088BB10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SettingsDataProtectionVC.storyboard; sourceTree = "<group>"; };
 		751E0CED2309AE8D0088BB10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SettingsVC.storyboard; sourceTree = "<group>"; };
@@ -2453,14 +2441,12 @@
 		F30D035C2A7BD3CF0047525F /* PasswordQualityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordQualityIndicatorView.swift; sourceTree = "<group>"; };
 		F30D036E2A7BE83A0047525F /* PasswordQuality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordQuality.swift; sourceTree = "<group>"; };
 		F31114A72B9B83B300236632 /* DropboxConnectionSetupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxConnectionSetupCoordinator.swift; sourceTree = "<group>"; };
-		F321414B2A90D2CD007A8D4E /* PasswordAuditServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordAuditServiceTests.swift; sourceTree = "<group>"; };
 		F32228142CCEC4230093BD9C /* KeyFileTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFileTextField.swift; sourceTree = "<group>"; };
 		F33F2C502B32DD61009EFB18 /* TagSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSelectorVC.swift; sourceTree = "<group>"; };
 		F33F2C532B32E059009EFB18 /* TagSelectorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSelectorCoordinator.swift; sourceTree = "<group>"; };
 		F34010A22AA1E540005FDF55 /* ExposureCountFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposureCountFormatter.swift; sourceTree = "<group>"; };
 		F34AB0702BAF1C7D00BB50A3 /* GoogleDriveConnectionSetupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDriveConnectionSetupCoordinator.swift; sourceTree = "<group>"; };
 		F34B0DC92B21D10C001F7500 /* FreeBadgeAccessory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeBadgeAccessory.swift; sourceTree = "<group>"; };
-		F34B0DCD2B22673F001F7500 /* AppHistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHistoryTests.swift; sourceTree = "<group>"; };
 		F35232A92B36FE6200F17F13 /* LString+tags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LString+tags.swift"; sourceTree = "<group>"; };
 		F35232AF2B36FF2200F17F13 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		F35538902B08DDF600D9F95D /* Coordinator+databaseUpgrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator+databaseUpgrade.swift"; sourceTree = "<group>"; };
@@ -2470,7 +2456,6 @@
 		F36DB1E22CE4CAF300E58F82 /* DatabaseViewerPermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseViewerPermissionManager.swift; sourceTree = "<group>"; };
 		F3741DE72B5966780089F666 /* LargeTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTypeVC.swift; sourceTree = "<group>"; };
 		F377C9AA2AA74A1A00266397 /* FaviconDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaviconDownloader.swift; sourceTree = "<group>"; };
-		F377C9AC2AA74F9000266397 /* FaviconDownloaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaviconDownloaderTests.swift; sourceTree = "<group>"; };
 		F37CAA262A87D4F20000EF64 /* PasswordAuditCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordAuditCoordinator.swift; sourceTree = "<group>"; };
 		F37CAA282A87D55B0000EF64 /* PasswordAuditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordAuditVC.swift; sourceTree = "<group>"; };
 		F37CAA2A2A87DDF60000EF64 /* PasswordAuditVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PasswordAuditVC.storyboard; sourceTree = "<group>"; };
@@ -2479,8 +2464,6 @@
 		F37CAA312A88DDD00000EF64 /* PasswordAuditResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordAuditResultsVC.swift; sourceTree = "<group>"; };
 		F37CAA332A88DDE30000EF64 /* PasswordAuditResultsVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PasswordAuditResultsVC.storyboard; sourceTree = "<group>"; };
 		F37CAA392A88F7330000EF64 /* KeePassiumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeePassiumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F37CAA422A88F74E0000EF64 /* HIBPServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIBPServiceTests.swift; sourceTree = "<group>"; };
-		F37CAA4D2A88F8D10000EF64 /* DumpEquatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumpEquatable.swift; sourceTree = "<group>"; };
 		F38A48C32A80E987006B3B21 /* PasswordQualityIndicatorIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordQualityIndicatorIconView.swift; sourceTree = "<group>"; };
 		F38DB2282D131568008A8D7A /* SettingsShakeGestureActionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsShakeGestureActionVC.swift; sourceTree = "<group>"; };
 		F3A2186C2C27045E006AB8F8 /* GroupEditorNotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEditorNotesCell.swift; sourceTree = "<group>"; };
@@ -2489,12 +2472,9 @@
 		F3B157D42B29B37F003F5075 /* OnboardingStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStep.swift; sourceTree = "<group>"; };
 		F3B157D62B29B4A6003F5075 /* OnboardingStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStepVC.swift; sourceTree = "<group>"; };
 		F3B157D82B29BB4F003F5075 /* OnboardingStepVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingStepVC.storyboard; sourceTree = "<group>"; };
-		F3B5B2DC2A88FC2A0059F2D1 /* PasswordQualityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordQualityTests.swift; sourceTree = "<group>"; };
 		F3B69FCB2B078917006FC966 /* EntryExtraViewerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryExtraViewerVC.swift; sourceTree = "<group>"; };
 		F3C71AAD2AFFAD7A00EEAC8E /* GroupEditorTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEditorTitleCell.swift; sourceTree = "<group>"; };
 		F3C744452CA5A820005D5429 /* AutoFillMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFillMode.swift; sourceTree = "<group>"; };
-		F3D011472B77B96800A9AF96 /* SearchQueryParsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQueryParsingTests.swift; sourceTree = "<group>"; };
-		F3D011492B77CEFB00A9AF96 /* SearchHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHelperTests.swift; sourceTree = "<group>"; };
 		F3E194672BCF23DB00FD03EE /* DeleteWordlistAccessory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteWordlistAccessory.swift; sourceTree = "<group>"; };
 		F3F72EEF2AB32C8900C804FC /* Favicon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favicon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -3436,26 +3416,8 @@
 		F37CAA3A2A88F7330000EF64 /* KeePassiumTests */ = {
 			isa = PBXGroup;
 			children = (
-				F37CAA4C2A88F8CA0000EF64 /* Helpers */,
-				F34B0DCD2B22673F001F7500 /* AppHistoryTests.swift */,
-				F377C9AC2AA74F9000266397 /* FaviconDownloaderTests.swift */,
-				F37CAA422A88F74E0000EF64 /* HIBPServiceTests.swift */,
-				F321414B2A90D2CD007A8D4E /* PasswordAuditServiceTests.swift */,
-				F3B5B2DC2A88FC2A0059F2D1 /* PasswordQualityTests.swift */,
-				F3D011472B77B96800A9AF96 /* SearchQueryParsingTests.swift */,
-				F3D011492B77CEFB00A9AF96 /* SearchHelperTests.swift */,
-				751C7D4F2BDFE3A0006A58F4 /* XMLParsingSanityTests.swift */,
-				751C7D532BE03582006A58F4 /* XMLParsingCompletenessTests.swift */,
 			);
 			path = KeePassiumTests;
-			sourceTree = "<group>";
-		};
-		F37CAA4C2A88F8CA0000EF64 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				F37CAA4D2A88F8D10000EF64 /* DumpEquatable.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -5117,16 +5079,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				751C7D542BE03582006A58F4 /* XMLParsingCompletenessTests.swift in Sources */,
-				F321414C2A90D2CD007A8D4E /* PasswordAuditServiceTests.swift in Sources */,
-				F37CAA4E2A88F8D10000EF64 /* DumpEquatable.swift in Sources */,
-				F37CAA432A88F74E0000EF64 /* HIBPServiceTests.swift in Sources */,
-				751C7D502BDFE3A0006A58F4 /* XMLParsingSanityTests.swift in Sources */,
-				F3D0114A2B77CEFB00A9AF96 /* SearchHelperTests.swift in Sources */,
-				F3B5B2DD2A88FC2A0059F2D1 /* PasswordQualityTests.swift in Sources */,
-				F3D011482B77B96800A9AF96 /* SearchQueryParsingTests.swift in Sources */,
-				F34B0DCE2B22673F001F7500 /* AppHistoryTests.swift in Sources */,
-				F377C9AD2AA74F9000266397 /* FaviconDownloaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6388,7 +6340,6 @@
 		754BF0922082A6BD00E3A292 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APP_URL_SCHEME = keepassium;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "app-icon";
 				CODE_SIGN_ENTITLEMENTS = KeePassium/KeePassium.entitlements;
@@ -6426,7 +6377,6 @@
 		754BF0932082A6BD00E3A292 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APP_URL_SCHEME = keepassium;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "app-icon";
 				CODE_SIGN_ENTITLEMENTS = KeePassium/KeePassium.entitlements;
@@ -6464,7 +6414,6 @@
 		75B38C7F233E5B7C006BDEFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APP_URL_SCHEME = keepassium.pro;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "app-icon-pro";
 				CODE_SIGN_ENTITLEMENTS = KeePassium/KeePassium.entitlements;
@@ -6501,7 +6450,6 @@
 		75B38C80233E5B7C006BDEFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APP_URL_SCHEME = keepassium.pro;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "app-icon-pro";
 				CODE_SIGN_ENTITLEMENTS = KeePassium/KeePassium.entitlements;
@@ -6538,7 +6486,6 @@
 		75D076D628B639D200F02E39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APP_URL_SCHEME = keepassium.org;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "app-icon-emm";
 				CODE_SIGN_ENTITLEMENTS = KeePassium/KeePassiumOrg.entitlements;
@@ -6578,7 +6525,6 @@
 		75D076D728B639D200F02E39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APP_URL_SCHEME = keepassium.org;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "app-icon-emm";
 				CODE_SIGN_ENTITLEMENTS = KeePassium/KeePassiumOrg.entitlements;
