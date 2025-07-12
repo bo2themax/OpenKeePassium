@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Combine
 
 final class OnboardingStepVC: UIViewController {
     var step: OnboardingStep!
@@ -18,12 +19,14 @@ final class OnboardingStepVC: UIViewController {
     @IBOutlet private weak var buttonsStackView: UIStackView!
     @IBOutlet private weak var buttonsBorderView: UIView!
 
+    private var actionsObserver: AnyCancellable?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = ImageAsset.backgroundPattern.asColor()
 
-        step.actions
+        step.actions.value
             .filter { !$0.attributes.contains(.hidden) }
             .forEach {
                 buttonsStackView.addArrangedSubview(createButton(forAction: $0, primary: true))
@@ -39,6 +42,19 @@ final class OnboardingStepVC: UIViewController {
             .compactMap { $0 }
             .joined(separator: ". ")
         illustrationImageView.image = step.illustration
+        actionsObserver = step.actions.removeDuplicates()
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] newActions in
+                guard let self else {
+                    return
+                }
+                buttonsStackView.arrangedSubviews.forEach({ self.buttonsStackView.removeArrangedSubview($0) })
+                newActions
+                    .filter { !$0.attributes.contains(.hidden) }
+                    .forEach {
+                        self.buttonsStackView.addArrangedSubview(self.createButton(forAction: $0, primary: true))
+                    }
+            }
     }
 
     override func viewDidAppear(_ animated: Bool) {

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Combine
 
 struct OnboardingStep {
     enum Identifier {
@@ -22,7 +23,7 @@ struct OnboardingStep {
     let text: String?
     let canSkip: Bool
     let illustration: UIImage?
-    let actions: [UIAction]
+    let actions: CurrentValueSubject<[UIAction], Never>
     let skipAction: UIAction?
 
     init(
@@ -39,7 +40,7 @@ struct OnboardingStep {
         self.text = text
         self.canSkip = canSkip
         self.illustration = illustration
-        self.actions = actions
+        self.actions = .init(actions)
         self.skipAction = skipAction
     }
 }

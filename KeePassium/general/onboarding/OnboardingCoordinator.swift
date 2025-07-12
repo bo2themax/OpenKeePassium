@@ -9,6 +9,7 @@
 import KeePassiumLib
 import LocalAuthentication
 import UIKit
+import AuthenticationServices
 
 protocol OnboardingCoordinatorDelegate: AnyObject {
     func didPressCreateDatabase(in coordinator: OnboardingCoordinator)
@@ -52,7 +53,7 @@ final class OnboardingCoordinator: Coordinator {
             illustration: UIImage.symbol(.onboardingAutoFill),
             actions: [
                 UIAction(title: LString.Onboarding.actionActivateAutoFill) { [unowned self] _ in
-                    self.startAutoFillSetup()
+                    self.startAutoFillSetup(request: true)
                 },
             ],
             skipAction: UIAction(title: LString.actionSkip) { [weak self] _ in self?.showNext() }
@@ -180,10 +181,22 @@ final class OnboardingCoordinator: Coordinator {
 }
 
 extension OnboardingCoordinator {
-    private func startAutoFillSetup() {
+    private func startAutoFillSetup(request: Bool) {
+        guard !request else {
+            if #available(iOS 18.0, macOS 14.0, *) {
+                ASSettingsHelper.requestToTurnOnCredentialProviderExtension { isOn in
+                    if !isOn {
+                        self.onboardingSteps.first(where: { $0.id == .autoFill })?.actions.send([UIAction(title: LString.Onboarding.openAutoFillSettings) { [unowned self] _ in
+                            self.startAutoFillSetup(request: false)
+                        }])
+                    }
+                }
+            }
+            return
+        }
         let urlOpener = URLOpener(AppGroup.applicationShared)
-        urlOpener.open(url: URL.Prefs.autoFillPreferences) { [weak self, weak urlOpener] success in
-            if success {
+        ASSettingsHelper.openCredentialProviderAppSettings { [weak self, weak urlOpener] error in
+            if error == nil {
                 self?.startAutoFillCheckTimer()
             } else {
                 Diag.error("Failed to open system AutoFill settings, falling back to online guide")
@@ -332,6 +345,11 @@ extension LString {
         public static let actionActivateAutoFill = NSLocalizedString(
             "[Onboarding/AutoFill/activate]",
             value: "Activate AutoFill",
+            comment: "Action/button to set up the Password AutoFill feature. Not a call to action."
+        )
+        public static let openAutoFillSettings = NSLocalizedString(
+            "[Onboarding/AutoFill/openSettings]",
+            value: "Go to AutoFill Settings",
             comment: "Action/button to set up the Password AutoFill feature. Not a call to action."
         )
 
